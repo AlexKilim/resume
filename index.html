@@ -6,75 +6,102 @@
     <meta name="description" content="This is my first resume">
     <meta name="keywords" content="alex, resume">
     <title>Alex Resume</title>
-    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="Imgs/77.jpg" width="150" alt="Здесь могла быть моя аватарка">
-    <h1>Мастер Лао</h1>
+    <div class="container">
+        <div class="info">
+            <div class="info-block">
+                <img src="Imgs/77.jpg" alt="Здесь могла быть моя аватарка">
+            </div>
+            <div class="info-text info-block">
+                <h1>Мастер Лао</h1>
 
-    <p>
-        Я познаю <strong>HTML</strong>. Имею опыт познания <em> кровати, холодильника и горшка</em>.
-    </p>
+                <p>
+                    Я познаю <strong>HTML</strong>. Имею опыт познания <em> кровати, холодильника и горшка</em>.
+                </p>
+            
+                <h3>Cписок социальных сетей</h3>
+                <a href="https://vk.com/" target="_blank">VK</a>
+                |
+                <a href="https://t.me/" target="_blank">Telegram</a>
+            </div>
+        </div>
+        
 
-    <h3>Мои хобби</h3>
+        <div class="card bg-green">
+            <h3>Мои хобби</h3>
 
-    <ol>
-        <li>Играть</li>
-        <li>Кричать</li>
-        <li>Плакать</li>
-        <li>Спать</li>
-        <li>Есть</li>
-    </ol>
+            <ol class="list">
+                <li>Играть</li>
+                <li>Кричать</li>
+                <li>Плакать</li>
+                <li>Спать</li>
+                <li>Есть</li>
+            </ol>
+        </div>  
 
-    <table>
-        <thead>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </thead>
-        <tr>
-            <td>Пеленки</td>
-            <td>Молокосос</td>
-            <td>2023</td>
-        </tr>
-        <tr>
-            <td>Подгузники</td>
-            <td>Ползунок</td>
-            <td>2024</td>
-        </tr>
-        <tr>
-            <td>Ясли</td>
-            <td>Крикун</td>
-            <td>2025</td>
-        </tr>
-    </table>
-
-    <h3>Cписок социальных сетей</h3>
-    <a href="https://vk.com/alexyurk" target="_blank">VK</a>
-    |
-    <a href="https://t.me/AlexKilim" target="_blank">Telegram</a>
-    
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+        <div class="card bg-red">
+            <h3>Опыт работы</h3>
+            <table class="table">
+                <thead>
+                    <th>Название</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                </thead>
+                <tr>
+                    <td>Пеленки</td>
+                    <td>Молокосос</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>Подгузники</td>
+                    <td>Ползунок</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>Ясли</td>
+                    <td>Крикун</td>
+                    <td>2025</td>
+                </tr>
+            </table>
         </div>
 
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="card bg-yellow">
+            <h3>Мои курсы</h3>
+            <ul class="link-list">
+                <li>Вокал</li>
+                <li>Ползание</li>
+                <li>Бегание</li>
+                <li>Вредительство</li>
+            </ul>
         </div>
 
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" placeholder="Введите сообщение..." cols="25" rows="10" > </textarea>
-        </div>
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
 
-        <button type="submit">Отправить</button>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
 
-    </form>
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" placeholder="Введите сообщение..." cols="25" rows="10" > </textarea>
+            </div>
 
+            <button type="submit" class="btn">Отправить</button>
+
+        </form>
+        <br>
+        <br>
+        <br>
+    </div>
 </body>
 </html>
